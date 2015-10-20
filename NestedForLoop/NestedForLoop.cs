@@ -26,15 +26,12 @@ namespace NestedForLoop
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-            string letter;
-            string letterTwo;
+
             for (int number = 65; number <= 90; number++)
             {
                 for (int numberTwo = 97; numberTwo <= 122; numberTwo++)
                 {
-                    letter = Char.ConvertFromUtf32(number);
-                    letterTwo = Char.ConvertFromUtf32(numberTwo);
-                    this.lstCharactersList.Items.Add(letter + "->" + letterTwo);
+                    this.lstCharactersList.Items.Add(Char.ConvertFromUtf32(number) + "->" + Char.ConvertFromUtf32(numberTwo));
                 }
             }
         }
